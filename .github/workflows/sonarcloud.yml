@@ -43,5 +43,5 @@ jobs:
         shell: powershell
         run: |
           SonarScanner.MSBuild.exe begin /k:"ydv-dev_Lab.Net" /o:"ydv-dev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          MSBuild.exe CSharp_Lab\CSharp_Lab.sln
+          MSBuild.exe CSharp_Lab\CSharp_Lab.sln /t:Rebuild
           SonarScanner.MSBuild.exe end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
