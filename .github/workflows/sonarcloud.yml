@@ -16,7 +16,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --configuration Release
+      run: dotnet build CSharp_Lab\CSharp_Lab.sln --no-restore
+      #run: dotnet build --configuration Release --no-restore
+      #- name: Test
+      #run: dotnet test --configuration Release
       
