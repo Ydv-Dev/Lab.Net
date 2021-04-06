@@ -11,7 +11,12 @@ namespace VirtualLab
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidateControls();
+        }
 
+        public void ValidateControls() 
+        { 
+            //This method will validate all the controls
         }
     }
 }

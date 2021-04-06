@@ -47,6 +47,10 @@
                     <td> <asp:CheckBox ID="chkGraduate" runat="server" Text="Graduate" /><asp:CheckBox ID="chkPostGraduate" runat="server" Text="PostGraduate" /><asp:CheckBox ID="chkDoctorate" runat="server" Text="Doctorate" /></td>
                 </tr>
                 <tr>
+                    <td>Age :</td>
+                    <td><asp:TextBox ID="TextBox1" runat="server" Width="248px"></asp:TextBox></td>
+                </tr>
+                <tr>
                     <td></td>
                     <td> &nbsp;</td>
                 </tr>
