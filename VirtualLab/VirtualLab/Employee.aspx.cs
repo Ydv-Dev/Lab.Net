@@ -28,7 +28,7 @@ namespace VirtualLab
 
             if (!Page.IsPostBack)
             {
-                //drpCity.Items.Clear();
+                drpCity.Items.Clear();
                 drpCity.Items.Add(new ListItem("Milton"));
                 drpCity.Items.Add("London");
                 drpCity.Items.Add(new ListItem("Toronto"));
