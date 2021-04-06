@@ -40,6 +40,35 @@ namespace VirtualLab
 
         }
 
+        private bool ReValidateEmployees(List<VirtualLab.BusinessObjects.Employee> emplist)
+        {
+            bool result = false;
+            try
+            {
+                if (emplist != null)
+                {
+                    foreach (VirtualLab.BusinessObjects.Employee emp in emplist)
+                    {
+
+                        if (emp != null)
+                        {
+
+                            emp.FirstName = "Lucky";
+
+                        }
+                    }
+                    result = true;
+                }
+
+            }
+            catch (Exception)
+            {
+
+                result = false;
+            }
+            return result;
+        }
+
         private bool ValidateEmployees(List<VirtualLab.BusinessObjects.Employee> emplist) 
         {
             bool result=false;
