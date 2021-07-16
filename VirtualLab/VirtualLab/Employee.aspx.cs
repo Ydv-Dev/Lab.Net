@@ -133,5 +133,9 @@ namespace VirtualLab
             Response.Write("lnkDelete_Command Event" + "<br>");
         }
 
+        protected void NewBranch(object sender, CommandEventArgs e)
+        {
+            Response.Write("lnkDelete_Command Event" + "<br>");
+        }
     }
 }
